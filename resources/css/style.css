@@ -1,23 +1,27 @@
-* {
+body {
+  margin: 0px 0px;
   font-family: Helvetica;
   color: seashell;
   background-color: black;
-  /*opacity: 0.9; */
+  text-align: center;
 }
-body {
-  margin: 0px 0px;
+a, p {
+  color: seashell;
+  font-weight: bold;
 }
 header {
   display: flex;
   height: 69px;
   width: 100%;
+  font-family: Helvetica;
+  color: seashell;
+  background-color: black;
   position: fixed;
   justify-content: space-between;
   align-items: center;
-  padding: 0px 10px;
-  border-bottom: 1px solid seashell;
   padding: 0px;
-  z-index: 5;
+  border-bottom: 1px solid seashell;
+  z-index: 1;
 }
 .logo {
   height: 50px;
@@ -30,9 +34,10 @@ nav {
 nav span {
   padding: 10px;
   text-decoration: underline;
+  color: seashell;
 }
 .all-content {
-  padding-top: 69px;
+  padding-top: 70px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -41,6 +46,7 @@ nav span {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
+  align-items: center;
 }
 #mission {
   background-image: url(../images/img-mission-background.jpg);
@@ -48,27 +54,52 @@ nav span {
   width: 1200px;
   flex-direction: column;
   align-items: center;
+  padding-top: 70px;
 }
-.content {
+.mission-content {
   width: 100%;
   text-align: center;
+  background-color: black;
 }
 #featured {
   width: 1000px;
   text-align: center;
+  padding: 70px 0px;
 }
 .item img {
   width: 300px;
   height: 200px;
-  display: flex;
-  flex-direction: column;
   margin: 10px;
-}
-.item span {
-  font-size: 22px;
-  font-weight: bold;
-  padding: 5px;
 }
 .item {
   padding: 5px;
+  display: flex;
+  flex-direction: column;
+}
+#locations {
+  background-image: url(../images/img-locations-background.jpg);
+  height: 500px;
+  width: 100%;
+  padding-top: 70px;
+}
+.locations {
+  background-color: black;
+  margin: 5px 20px;
+  display: flex;
+  flex-direction: column;
+  width: 280px;
+  padding: 10px;
+}
+.contact {
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+footer {
+  text-align: left;
+  padding: 20px;
+  font-family: Helvetica;
+  font-weight: bold;
+
 }
